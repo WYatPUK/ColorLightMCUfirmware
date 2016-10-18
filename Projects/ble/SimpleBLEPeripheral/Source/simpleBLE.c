@@ -18,6 +18,9 @@
 #include "osal_snv.h"
 #include "simpleBLE.h"
 #include "stdio.h"
+#include "LEDcontrol.h"
+
+#define LEDcontrol_Open
 
 SYS_CONFIG sys_config;
 static bool g_bToConnect = FALSE;
@@ -32,6 +35,9 @@ static bool simpleBLE_AT_CMD_Handle(uint8 *pBuffer, uint16 length);
 
 #if defined (AUTO_UART2UART)  
 static void simpleBLE_SendMyData_ForTest();
+#endif
+#if defined (LEDcontrol_Open)
+static void SimpleBLE_LEDcontrol();
 #endif
 
 void Serial_Delay(int times)
@@ -487,7 +493,9 @@ void performPeriodicTask( void )
         // 发送自己的自定义数据， 实现自动数据串口透传
         simpleBLE_SendMyData_ForTest();
 #endif
-
+#if defined(LEDcontrol_Open)
+    SimpleBLE_LEDcontrol();
+#endif
     }
 }
 
@@ -1285,3 +1293,9 @@ void simpleBLE_SendMyData_ForTest()
 }
 #endif
 
+#if defined(LEDcontrol_Open)
+void SimpleBLE_LEDcontrol()
+{
+  LED_perfrom_period_task();
+}
+#endif

@@ -61,78 +61,8 @@
 #include "simpleGATTprofile.h"
 
 #include <ioCC2541.h>
-#define LEDp P1_2
 
-static char GRBbuffer[300];
-
-void Code(unsigned char a){
-  LEDp = 1;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  LEDp = a >> 7;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  LEDp = 0;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  
-  LEDp = 1;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  LEDp = a >> 6;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  LEDp = 0;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  
-  LEDp = 1;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  LEDp = a >> 5;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  LEDp = 0;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  
-  LEDp = 1;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  LEDp = a >> 4;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  LEDp = 0;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  
-  LEDp = 1;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  LEDp = a >> 3;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  LEDp = 0;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  
-  LEDp = 1;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  LEDp = a >> 2;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  LEDp = 0;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  
-  LEDp = 1;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  LEDp = a >> 1;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  LEDp = 0;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  
-  LEDp = 1;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n");
-  LEDp = a >> 0;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  LEDp = 0;
-  asm("NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n NOP\n");
-  
-}
-
-void SetGRBAll(char *All, int num)
-{
-  int i=0;
-  for (;i<num;i++)
-  {
-    Code(All[i]);
-  }
-}
-
+#include "LEDcontrol.h"
 
 #if defined( CC2540_MINIDK )
   #include "simplekeys.h"
@@ -928,100 +858,6 @@ static void peripheralRssiReadCB( int8 rssi )
  *
  * @return  none
  */
-bool IsHexNum(char x)
-{
-  if ((x>='0' && x<='9') || (x>='a' && x<='f') || (x>='A' && x<='F')) return true;
-  return false;
-}
-char HexToChar(char H, char L)
-{
-  char A = 0;
-  if (H>='0' && H<='9') A |= (H - '0')<<4;
-  else if (H>='a' && H<='f') A |= (H - 'a' + 10)<<4;
-  else if (H>='A' && H<='F') A |= (H - 'A' + 10)<<4;
-  if (L>='0' && L<='9') A |= (L - '0');
-  else if (L>='a' && L<='f') A |= (L - 'a' + 10);
-  else if (L>='A' && L<='F') A |= (L - 'A' + 10);
-  return A;
-}
-bool IsSetUnitCmd(uint8 *String,uint8 N)
-{
-  if (N!=11) return false;
-  if (String[0]!='U' || String[1]!='n' || String[2]!='i' || String[3]!='t' || String[4]!=':') return false;
-  if (!IsHexNum(String[5]) || !IsHexNum(String[6]) || !IsHexNum(String[7]) || !IsHexNum(String[8]) || !IsHexNum(String[9]) || !IsHexNum(String[10])) return false;
-  return true;
-}
-bool IsSetNSameCmd(uint8 *String,uint8 N)
-{
-  if (N!=15) return false;
-  if (String[0]!='N' || String[1]!='S' || String[2]!='a' || String[3]!='m' || String[4]!='e' || String[5]!=':') return false;
-  if (!IsHexNum(String[6]) || !IsHexNum(String[7]) || !IsHexNum(String[8]) || !IsHexNum(String[9]) || !IsHexNum(String[10]) || !IsHexNum(String[11])) return false;
-  if (String[12]!='o' || String[13]!='f') return false;
-  if (!IsHexNum(String[14])) return false;
-  return true;
-}
-bool IsPushNCmd(uint8 *String,uint8 N)
-{
-  if (N!=15) return false;
-  if (String[0]!='P' || String[1]!='u' || String[2]!='s' || String[3]!='h' || String[4]!='N' || String[5]!=':') return false;
-  if (!IsHexNum(String[6]) || !IsHexNum(String[7]) || !IsHexNum(String[8]) || !IsHexNum(String[9]) || !IsHexNum(String[10]) || !IsHexNum(String[11])) return false;
-  if (String[12]!='o' || String[13]!='f') return false;
-  if (!IsHexNum(String[14])) return false;
-  return true;
-}
-void ExcuteSetUnitCmd(uint8 *String,uint8 N)
-{
-  //already confirm at "IsSetUnitCmd" function
-  GRBbuffer[0] = HexToChar(String[5], String[6]);
-  GRBbuffer[1] = HexToChar(String[7], String[8]);
-  GRBbuffer[2] = HexToChar(String[9], String[10]);
-  SetGRBAll(GRBbuffer, 3);
-}
-void ExcuteSetNSameCmd(uint8 *String,uint8 N)
-{
-  char i= String[14] - '0';
-  char Num = i;
-  char G = HexToChar(String[6], String[7]);
-  char R = HexToChar(String[8], String[9]);
-  char B = HexToChar(String[10], String[11]);
-  while (i--)
-  {
-    GRBbuffer[3*i] = G;
-    GRBbuffer[3*i + 1] = R;
-    GRBbuffer[3*i + 2] = B;
-  }
-  SetGRBAll(GRBbuffer, 3*Num);
-}
-void ExcutePushNCmd(uint8 *String,uint8 N)
-{
-  char i= String[14] - '0';
-  char Num = i;
-  while (--i)
-  {
-    GRBbuffer[3*i] = GRBbuffer[3*i-3];
-    GRBbuffer[3*i + 1] = GRBbuffer[3*i-2];
-    GRBbuffer[3*i + 2] = GRBbuffer[3*i-1];
-  }
-  GRBbuffer[0] = HexToChar(String[6], String[7]);
-  GRBbuffer[1] = HexToChar(String[8], String[9]);
-  GRBbuffer[2] = HexToChar(String[10], String[11]);
-  SetGRBAll(GRBbuffer, 3*Num);
-}
-void HandleGRBCmd(uint8 *String, uint8 N)
-{
-  if (IsSetUnitCmd(String, N))
-  {
-    ExcuteSetUnitCmd(String, N);
-  }
-  else if (IsSetNSameCmd(String, N))
-  {
-    ExcuteSetNSameCmd(String, N);
-  }
-  else if (IsPushNCmd(String, N))
-  {
-    ExcutePushNCmd(String, N);
-  }
-}
 
 static void simpleProfileChangeCB( uint8 paramID )
 {
@@ -1054,7 +890,7 @@ static void simpleProfileChangeCB( uint8 paramID )
       SimpleProfile_GetParameter( SIMPLEPROFILE_CHAR6, newChar6Value, &returnBytes );
       if(returnBytes > 0)
       {
-        HandleGRBCmd(newChar6Value,returnBytes);
+        HandleGRBCmd(newChar6Value,returnBytes); //LED control
         
         NPI_WriteTransport(newChar6Value,returnBytes); // 发送改变的那些值
       }

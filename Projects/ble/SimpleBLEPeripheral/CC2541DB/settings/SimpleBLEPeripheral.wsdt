@@ -12,7 +12,7 @@
           
           
           
-        <Column0>232</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+        <Column0>230</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
       </Workspace>
       <Build>
         
@@ -29,7 +29,7 @@
     <Windows>
       
       
-    <Wnd0>
+    <Wnd2>
         <Tabs>
           <Tab>
             <Identity>TabID-5673-2972</Identity>
@@ -41,7 +41,7 @@
           </Tab>
         </Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
         <Tabs>
           <Tab>
             <Identity>TabID-4627-2991</Identity>
@@ -57,20 +57,20 @@
           </Tab>
         </Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd1></Windows>
+      <SelectedTab>0</SelectedTab></Wnd3></Windows>
     <Editor>
       
       
       
       
-    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\simpleBLEPeripheral.c</Filename><XPos>0</XPos><YPos>955</YPos><SelStart>31779</SelStart><SelEnd>31779</SelEnd></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\SimpleBLEPeripheral_Main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>3657</SelStart><SelEnd>3657</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\simpleBLE.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>431</SelStart><SelEnd>431</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\simpleBle.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\Components\osal\common\OSAL.c</Filename><XPos>0</XPos><YPos>1242</YPos><SelStart>29064</SelStart><SelEnd>29064</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\..\BLE&#x63A7;&#x5236;RGB&#x706F;\BLE_LED_Controller\Projects\ble\SimpleBLEPeripheral\Source\SimpleBLEPeripheral_Main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>3657</SelStart><SelEnd>3657</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\simpleBLEPeripheral.c</Filename><XPos>0</XPos><YPos>869</YPos><SelStart>29313</SelStart><SelEnd>29313</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\simpleBLE.c</Filename><XPos>0</XPos><YPos>27</YPos><SelStart>38741</SelStart><SelEnd>38741</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\OSAL_SimpleBLEPeripheral.c</Filename><XPos>0</XPos><YPos>109</YPos><SelStart>791</SelStart><SelEnd>791</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\LEDcontrol.h</Filename><XPos>0</XPos><YPos>114</YPos><SelStart>2922</SelStart><SelEnd>2922</SelEnd></Tab><ActiveTab>3</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\LEDTool.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>1818</SelStart><SelEnd>1818</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
     <Positions>
       
       
       
       
       
-    <Top><Row0><Sizes><Toolbar-02d517c8><key>iaridepm.enu1</key></Toolbar-02d517c8></Sizes></Row0></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>574</Bottom><Right>323</Right><x>-2</x><y>-2</y><xscreen>190</xscreen><yscreen>164</yscreen><sizeHorzCX>123698</sizeHorzCX><sizeHorzCY>209987</sizeHorzCY><sizeVertCX>211589</sizeVertCX><sizeVertCY>737516</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>162</Bottom><Right>1538</Right><x>-2</x><y>-2</y><xscreen>1540</xscreen><yscreen>164</yscreen><sizeHorzCX>1002604</sizeHorzCX><sizeHorzCY>209987</sizeHorzCY><sizeVertCX>123698</sizeVertCX><sizeVertCY>209987</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+    <Top><Row0><Sizes><Toolbar-054f1818><key>iaridepm.enu1</key></Toolbar-054f1818></Sizes></Row0></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>574</Bottom><Right>321</Right><x>-2</x><y>-2</y><xscreen>190</xscreen><yscreen>164</yscreen><sizeHorzCX>123698</sizeHorzCX><sizeHorzCY>209987</sizeHorzCY><sizeVertCX>210286</sizeVertCX><sizeVertCY>737516</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>162</Bottom><Right>1538</Right><x>-2</x><y>-2</y><xscreen>1540</xscreen><yscreen>164</yscreen><sizeHorzCX>1002604</sizeHorzCX><sizeHorzCY>209987</sizeHorzCY><sizeVertCX>123698</sizeVertCX><sizeVertCY>209987</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
   </Desktop>
 </Workspace>
 

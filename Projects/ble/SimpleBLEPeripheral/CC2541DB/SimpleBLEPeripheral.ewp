@@ -6362,6 +6362,12 @@
   <group>
     <name>APP</name>
     <file>
+      <name>$PROJ_DIR$\..\Source\LEDcontrol.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Source\LEDTool.h</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\..\Source\OSAL_simpleBLECentral.c</name>
     </file>
     <file>
@@ -6371,7 +6377,7 @@
       <name>$PROJ_DIR$\..\Source\simpleBLE.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\Source\simpleBle.h</name>
+      <name>$PROJ_DIR$\..\Source\simpleble.h</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\Source\simpleBLECentral.c</name>
