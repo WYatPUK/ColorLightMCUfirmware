@@ -198,7 +198,8 @@ extern bool simpleBLEChar6DoWrite;
 extern uint8 simpleBLEPeripheral_TaskID;        // 从机任务
 
 
-
+//wy add
+extern bool simpleBLE_IfConnected();
 
 
 

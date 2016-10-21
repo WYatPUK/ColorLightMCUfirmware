@@ -12,7 +12,7 @@
           
           
           
-        <Column0>230</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+        <Column0>234</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
       </Workspace>
       <Build>
         
@@ -25,7 +25,7 @@
         
       <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1381</ColumnWidth1></Debug-Log>
       <TerminalIO/>
-    </Static>
+    <Find-in-Files><ColumnWidth0>529</ColumnWidth0><ColumnWidth1>75</ColumnWidth1><ColumnWidth2>908</ColumnWidth2></Find-in-Files></Static>
     <Windows>
       
       
@@ -37,7 +37,7 @@
             <Factory>Workspace</Factory>
             <Session>
               
-            <NodeDict><ExpandedNode>SimpleBLEPeripheral</ExpandedNode><ExpandedNode>SimpleBLEPeripheral/APP</ExpandedNode><ExpandedNode>SimpleBLEPeripheral/LIB</ExpandedNode><ExpandedNode>SimpleBLEPeripheral/PROFILES</ExpandedNode></NodeDict></Session>
+            <NodeDict><ExpandedNode>SimpleBLEPeripheral</ExpandedNode><ExpandedNode>SimpleBLEPeripheral/APP</ExpandedNode><ExpandedNode>SimpleBLEPeripheral/HAL</ExpandedNode><ExpandedNode>SimpleBLEPeripheral/HAL/Common</ExpandedNode><ExpandedNode>SimpleBLEPeripheral/HAL/Target</ExpandedNode><ExpandedNode>SimpleBLEPeripheral/OSAL</ExpandedNode><ExpandedNode>SimpleBLEPeripheral/OSAL/OSAL.c</ExpandedNode></NodeDict></Session>
           </Tab>
         </Tabs>
         
@@ -55,7 +55,7 @@
             <Factory>Debug-Log</Factory>
             <Session/>
           </Tab>
-        </Tabs>
+        <Tab><Identity>TabID-17227-32345</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab></Tabs>
         
       <SelectedTab>0</SelectedTab></Wnd3></Windows>
     <Editor>
@@ -63,14 +63,14 @@
       
       
       
-    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\simpleBLEPeripheral.c</Filename><XPos>0</XPos><YPos>869</YPos><SelStart>29313</SelStart><SelEnd>29313</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\simpleBLE.c</Filename><XPos>0</XPos><YPos>27</YPos><SelStart>38741</SelStart><SelEnd>38741</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\OSAL_SimpleBLEPeripheral.c</Filename><XPos>0</XPos><YPos>109</YPos><SelStart>791</SelStart><SelEnd>791</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\LEDcontrol.h</Filename><XPos>0</XPos><YPos>114</YPos><SelStart>2922</SelStart><SelEnd>2922</SelEnd></Tab><ActiveTab>3</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\LEDTool.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>1818</SelStart><SelEnd>1818</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\simpleBLE.c</Filename><XPos>0</XPos><YPos>243</YPos><SelStart>7416</SelStart><SelEnd>7444</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\LEDcontrol.c</Filename><XPos>0</XPos><YPos>20</YPos><SelStart>944</SelStart><SelEnd>944</SelEnd></Tab><ActiveTab>1</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\LEDcontrol.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>273</SelStart><SelEnd>273</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\LEDTool.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>19</SelStart><SelEnd>19</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\simpleBLE.h</Filename><XPos>0</XPos><YPos>193</YPos><SelStart>5449</SelStart><SelEnd>5449</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\simpleBLEPeripheral.c</Filename><XPos>0</XPos><YPos>965</YPos><SelStart>5698</SelStart><SelEnd>5698</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\SimpleBLEPeripheral_Main.c</Filename><XPos>0</XPos><YPos>59</YPos><SelStart>3580</SelStart><SelEnd>3580</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
     <Positions>
       
       
       
       
       
-    <Top><Row0><Sizes><Toolbar-054f1818><key>iaridepm.enu1</key></Toolbar-054f1818></Sizes></Row0></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>574</Bottom><Right>321</Right><x>-2</x><y>-2</y><xscreen>190</xscreen><yscreen>164</yscreen><sizeHorzCX>123698</sizeHorzCX><sizeHorzCY>209987</sizeHorzCY><sizeVertCX>210286</sizeVertCX><sizeVertCY>737516</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>162</Bottom><Right>1538</Right><x>-2</x><y>-2</y><xscreen>1540</xscreen><yscreen>164</yscreen><sizeHorzCX>1002604</sizeHorzCX><sizeHorzCY>209987</sizeHorzCY><sizeVertCX>123698</sizeVertCX><sizeVertCY>209987</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+    <Top><Row0><Sizes><Toolbar-04801d50><key>iaridepm.enu1</key></Toolbar-04801d50></Sizes></Row0><Row1><Sizes/></Row1><Row2><Sizes/></Row2></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>662</Bottom><Right>325</Right><x>-2</x><y>-2</y><xscreen>257</xscreen><yscreen>240</yscreen><sizeHorzCX>167318</sizeHorzCX><sizeHorzCY>307298</sizeHorzCY><sizeVertCX>212891</sizeVertCX><sizeVertCY>850192</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>74</Bottom><Right>1538</Right><x>-2</x><y>-2</y><xscreen>1540</xscreen><yscreen>76</yscreen><sizeHorzCX>1002604</sizeHorzCX><sizeHorzCY>97311</sizeHorzCY><sizeVertCX>167318</sizeVertCX><sizeVertCY>307298</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
   </Desktop>
 </Workspace>
 

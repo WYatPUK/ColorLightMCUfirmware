@@ -1,0 +1,10 @@
+static uint8 brown[] = "30ff00";
+static uint8 red[] = "00ff00";
+static uint8 orange[] = "88ff00";
+static uint8 yellow[] = "ffff00";
+static uint8 green[] = "ff0000";
+static uint8 blue[] = "0000ff";
+static uint8 purple[] = "0099ff";
+static uint8 grey[] = "444444";
+static uint8 white[] = "ffffff";
+static uint8 black[] = "000000";

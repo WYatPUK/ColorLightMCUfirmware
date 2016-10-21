@@ -1,0 +1,92 @@
+
+
+ << Logging to file resumes >> 
+
+Fri Oct 21 16:01:29 2016: No verification errors found during download.
+Fri Oct 21 16:01:29 2016: Download completed and verification successful.
+Fri Oct 21 16:01:29 2016: Loaded debugee: E:\本宝宝的DIY\色环电灯\firmware\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Exe\SimpleBLEPeripheral.d51
+Fri Oct 21 16:01:29 2016: Target reset
+
+
+ << Logging to file resumes >> 
+
+Fri Oct 21 16:09:24 2016: No verification errors found during download.
+Fri Oct 21 16:09:24 2016: Download completed and verification successful.
+Fri Oct 21 16:09:24 2016: Loaded debugee: E:\本宝宝的DIY\色环电灯\firmware\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Exe\SimpleBLEPeripheral.d51
+Fri Oct 21 16:09:24 2016: Target reset
+
+
+ << Logging to file resumes >> 
+
+Fri Oct 21 16:12:58 2016: No verification errors found during download.
+Fri Oct 21 16:12:58 2016: Download completed and verification successful.
+Fri Oct 21 16:12:58 2016: Loaded debugee: E:\本宝宝的DIY\色环电灯\firmware\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Exe\SimpleBLEPeripheral.d51
+Fri Oct 21 16:12:58 2016: Target reset
+
+
+ << Logging to file resumes >> 
+
+Fri Oct 21 16:15:01 2016: No verification errors found during download.
+Fri Oct 21 16:15:01 2016: Download completed and verification successful.
+Fri Oct 21 16:15:01 2016: Loaded debugee: E:\本宝宝的DIY\色环电灯\firmware\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Exe\SimpleBLEPeripheral.d51
+Fri Oct 21 16:15:01 2016: Target reset
+
+
+ << Logging to file resumes >> 
+
+Fri Oct 21 16:15:38 2016: No verification errors found during download.
+Fri Oct 21 16:15:38 2016: Download completed and verification successful.
+Fri Oct 21 16:15:38 2016: Loaded debugee: E:\本宝宝的DIY\色环电灯\firmware\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Exe\SimpleBLEPeripheral.d51
+Fri Oct 21 16:15:38 2016: Target reset
+
+
+ << Logging to file resumes >> 
+
+Fri Oct 21 16:23:05 2016: No verification errors found during download.
+Fri Oct 21 16:23:05 2016: Download completed and verification successful.
+Fri Oct 21 16:23:05 2016: Loaded debugee: E:\本宝宝的DIY\色环电灯\firmware\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Exe\SimpleBLEPeripheral.d51
+Fri Oct 21 16:23:05 2016: Target reset
+Fri Oct 21 16:24:35 2016: The stack 'IdataStack' is filled to 100% (192 bytes used out of 192). The warning threshold is set to 90.%
+Fri Oct 21 16:24:35 2016: The stack 'XdataStack' is filled to 100% (640 bytes used out of 640). The warning threshold is set to 90.%
+Fri Oct 21 16:24:35 2016: The stack pointer for stack 'IdataStack' (currently IData:0x00) is outside the stack range (IData:0x40 to IData:0x100)
+Fri Oct 21 16:24:35 2016: The stack pointer for stack 'XdataStack' (currently XData:0x0000) is outside the stack range (XData:0x0001 to XData:0x0281)
+
+
+ << Logging to file resumes >> 
+
+Fri Oct 21 16:26:02 2016: No verification errors found during download.
+Fri Oct 21 16:26:02 2016: Download completed and verification successful.
+Fri Oct 21 16:26:02 2016: Loaded debugee: E:\本宝宝的DIY\色环电灯\firmware\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Exe\SimpleBLEPeripheral.d51
+Fri Oct 21 16:26:02 2016: Target reset
+Fri Oct 21 16:30:31 2016: The stack 'IdataStack' is filled to 100% (192 bytes used out of 192). The warning threshold is set to 90.%
+Fri Oct 21 16:30:31 2016: The stack 'XdataStack' is filled to 100% (640 bytes used out of 640). The warning threshold is set to 90.%
+Fri Oct 21 16:30:31 2016: The stack pointer for stack 'IdataStack' (currently IData:0x00) is outside the stack range (IData:0x40 to IData:0x100)
+Fri Oct 21 16:30:31 2016: The stack pointer for stack 'XdataStack' (currently XData:0x0000) is outside the stack range (XData:0x0001 to XData:0x0281)
+
+
+ << Logging to file resumes >> 
+
+Fri Oct 21 16:51:22 2016: No verification errors found during download.
+Fri Oct 21 16:51:22 2016: Download completed and verification successful.
+Fri Oct 21 16:51:22 2016: Loaded debugee: E:\本宝宝的DIY\色环电灯\firmware\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Exe\SimpleBLEPeripheral.d51
+Fri Oct 21 16:51:22 2016: Target reset
+Fri Oct 21 16:56:04 2016: The stack 'IdataStack' is filled to 100% (192 bytes used out of 192). The warning threshold is set to 90.%
+Fri Oct 21 16:56:04 2016: The stack 'XdataStack' is filled to 100% (640 bytes used out of 640). The warning threshold is set to 90.%
+Fri Oct 21 16:56:04 2016: The stack pointer for stack 'IdataStack' (currently IData:0x00) is outside the stack range (IData:0x40 to IData:0x100)
+Fri Oct 21 16:56:04 2016: The stack pointer for stack 'XdataStack' (currently XData:0x0000) is outside the stack range (XData:0x0001 to XData:0x0281)
+
+
+ << Logging to file resumes >> 
+
+Fri Oct 21 18:34:26 2016: No verification errors found during download.
+Fri Oct 21 18:34:26 2016: Download completed and verification successful.
+Fri Oct 21 18:34:26 2016: Loaded debugee: E:\本宝宝的DIY\色环电灯\firmware\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Exe\SimpleBLEPeripheral.d51
+Fri Oct 21 18:34:26 2016: Target reset
+
+
+ << Logging to file resumes >> 
+
+Fri Oct 21 19:12:30 2016: No verification errors found during download.
+Fri Oct 21 19:12:30 2016: Download completed and verification successful.
+Fri Oct 21 19:12:30 2016: Loaded debugee: E:\本宝宝的DIY\色环电灯\firmware\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Exe\SimpleBLEPeripheral.d51
+Fri Oct 21 19:12:30 2016: Target reset

@@ -20,7 +20,7 @@
 #include "stdio.h"
 #include "LEDcontrol.h"
 
-#define LEDcontrol_Open
+#define LEDcontrol_Open  // 开启每隔100ms刷新一次LED的进程
 
 SYS_CONFIG sys_config;
 static bool g_bToConnect = FALSE;
